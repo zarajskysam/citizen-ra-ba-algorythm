@@ -1,0 +1,38 @@
+li {
+  list-style-type: none;
+  margin-left: 80px;
+  padding: 10px;
+  border: 1px solid grey;
+  
+}
+
+ul {
+  margin-bottom: 20px;
+  display: block;
+  cursor: default;
+}
+
+.citizen {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.citizen-data-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.tooltipWrapper {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  width: 350px;
+  color: aliceblue;
+  padding: 10px;
+}
