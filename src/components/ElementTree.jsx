@@ -7,7 +7,7 @@ export const ElementTree = ({data}) => {
     return (
             <ul className={`citizen-${data.type}`}>
                 {typeof(data.name) === 'string' ? <li>{data.name}</li> : data.name.map(item => (<Tooltip key={nanoid()} content={`Город: ${item.city.name}, Население: ${item.city.data} человек`} children={<li className={`citizen-data-item`} >{item.name}</li>} />))}
-                {data.child && <li>{data.child && <ElementTree data={data.child} />}</li>}
+                {data.child && <li>{<ElementTree data={data.child} />}</li>}
             </ul>
     )
 }

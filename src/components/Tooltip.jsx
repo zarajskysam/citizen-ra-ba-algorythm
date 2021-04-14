@@ -29,7 +29,6 @@ export default class Tooltip extends Component {
 
     setVisibility = visible => {
         this.setState({ visible })
-        console.log(visible);
     }
 
     render() {

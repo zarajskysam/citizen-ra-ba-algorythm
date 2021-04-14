@@ -24,23 +24,16 @@ export default function List() {
         }
       } 
 
-      getFetch('http://localhost:7777/citizens', setCitisens); 
+      getFetch(process.env.REACT_APP_CITIZEN_TREE, setCitisens); 
     }, [])
 
-
-    
-   
-  
-  
-
- 
-
-  
     return (
+      <div className="container">
         <div className='citizen'>
         {citizens.map(item => (
           <ElementTree key={nanoid()} data={item}/>
         ))}
         </div>
+      </div>
     )
 }
